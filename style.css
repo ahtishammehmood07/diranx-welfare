@@ -843,6 +843,94 @@ header label {
     font-size: 20px;
     margin-top: 8px;
 }
+/* ================= DONORS ================= */
+
+.donors {
+    padding: 120px 8%;
+    background: #030604;
+}
+
+
+/* DONOR LIST */
+
+.donor-list {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+/* DONOR CARD */
+
+.donor-card {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    background: #0a100c;
+
+    border: 1px solid #293b1a;
+
+    transition: .3s;
+}
+
+
+.donor-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #a8dc3e;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.4);
+}
+
+
+/* NUMBER */
+
+.donor-number {
+    min-width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #5d782a;
+
+    color: #a8dc3e;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* NAME */
+
+.donor-card h3 {
+    color: white;
+
+    font-size: 17px;
+
+    margin-bottom: 7px;
+}
+
+
+/* DESCRIPTION */
+
+.donor-card p {
+    color: #777;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
 
 
 /* ================= CONTACT ================= */
@@ -1377,7 +1465,21 @@ footer a:hover {
     .gallery-item.large {
         grid-row: auto;
     }
+@media(max-width: 750px) {
 
+    .donors {
+        padding: 80px 6%;
+    }
+
+    .donor-list {
+        grid-template-columns: 1fr;
+    }
+
+    .donor-card {
+        padding: 20px;
+    }
+
+}
 
     /* CONTACT */
 
